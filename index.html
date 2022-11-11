@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    
+    <title> GeoNames Location</title>
+  </head>
+  <body>
+    
+
+    <label for="vol">  Place:</label>
+    <input type="text"  class="q" id="q" name="vol">
+
+    <label for="lang">languages: </label>
+    <select id="lang" >
+      <option value="en">English</option>
+      <option value="fr">Francais</option>
+      <option value="de">Deutsche</option>
+    </select>
+
+    <button id="button" > find address</button>
+    <div id="results">
+      <p>geonameId: <span id="geonameId"></span><p>
+      <p>Name: <span id="name"></span><p>
+      <p>countryCode: <span id="countryCode"></span><p>
+      <p>Latidue: <span id="lat"></span><p>
+      <p>Longitude: <span id="lng"></span><p>
+      <p>population: <span id="population"></span><p>
+  
+    </div>
+
+      <div id="error"> </div>
+
+
+
+      <script type="text/javascript" src="libs/js/jquery-3.5.1.js"></script>
+      <script type="text/javascript" src="libs/js/script.js"></script>
+  </body>
+</html>
