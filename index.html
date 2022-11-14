@@ -6,7 +6,8 @@
     <title> GeoNames Location</title>
   </head>
   <body>
-    
+    <h2> API: Search API </h2>
+    <h3> DESCRIPTION:search over all attributes of a place : place name, country name, continent </h3>
 
     <label for="vol">  Place:</label>
     <input type="text"  class="q" id="q" name="vol">
@@ -22,17 +23,53 @@
     <div id="results">
       <p>geonameId: <span id="geonameId"></span><p>
       <p>Name: <span id="name"></span><p>
-      <p>countryCode: <span id="countryCode"></span><p>
-      <p>Latidue: <span id="lat"></span><p>
-      <p>Longitude: <span id="lng"></span><p>
+    
       <p>population: <span id="population"></span><p>
   
     </div>
 
-      <div id="error"> </div>
+
+     <div> 
+        <h2> WIKIPEDIA SEARCH </h2>
+        <h3> DESCRIPTION: Returns the wikipedia entries found for the searchterm </h3>
+
+        <label for="cityname">City Name:</label>
+        <input type="text" id="q" name="name">
+
+        <button  id="find"  type="button"> Find Info</button>
+
+        <div id="result">
+          <p> summary: <br>  <span id="summary"> </span> </p>
+          <p> elevation above sea level:   <span id="elevation"> </span</p>
+          <p> rank:   <span id="rank"> </span</p>
+       
+
+     </div>
+
+     <div>
+         <h2> FIND NEARBY PLACES </h2>
+         <h3> DESCRIPTION: Returns the closest populated place (feature class=P) for the lat/lng</h3>
+         <label for="vol"> latidue (-90<span>&#176;</span> to 90<span>&#176;</span>)</label>
+         <input type="number"  class="lat" id="lat" name="vol" min="-90" max="90">
+     
+         <label for="vol2"> longitude (0<span>&#176;</span> to 180<span>&#176;</span>)</label>
+         <input type="number"  class="lat" id="lng" name="vol2" min="0" max="180">
+     
+         <button id="btnRun">Run</button>
+         <br>
+     
+         <p> Continent Code: <span id="continentCode"> </span></p>
+         <p> Distance: <span id="div1"></span> </p>
+         <p> country Name: <span id="countryName"> </span></p>
+        
+         <p> country Code: <span id="countryCode"> </span></p>
+      
+         <p > fclName: <span id="fclName"> </span> </p>
+  
+     </div>
 
 
-
+    
       <script type="text/javascript" src="libs/js/jquery-3.5.1.js"></script>
       <script type="text/javascript" src="libs/js/script.js"></script>
   </body>
